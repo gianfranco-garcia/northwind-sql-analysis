@@ -106,7 +106,7 @@ Beyond writing queries, this project applies analytical judgment:
 ## Data & Reproducibility
 
 Every figure in this analysis is **fully reproducible**: the complete database
-(`northwind.db`) and all queries (`queries.sql`) are included in this repo. To reproduce
+(`northwind.db`) and all queries (`queries.sql`) are included in this repository. To reproduce
 the results, run:
 
 ```bash

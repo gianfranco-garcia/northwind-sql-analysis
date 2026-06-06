@@ -37,13 +37,13 @@ answer those questions and recommend 2–3 concrete actions.
 
 ## Methodology
 
-1. **Data quality first.** Two public versions of Northwind were compared; one was
-   inflated with random data and a junk record, so it was discarded after a data-quality
-   check. The clean, classic version (830 real orders, real customers, 2016–2018) was used.
-2. **Seven business questions**, each written as a documented SQL query
+1. **Data quality first.** I compared two public versions of Northwind and found one
+   inflated with random data plus a junk record, so I discarded it and used the clean,
+   classic version (830 real orders, real customers, 2016–2018).
+2. **Seven business questions.** I wrote each one as a documented SQL query
    ([`queries.sql`](queries.sql)).
-3. **Interpretation over output.** Each result was read as a business insight — not just
-   a table — and verified with follow-up queries when a hypothesis needed testing.
+3. **Interpretation over output.** I read each result as a business insight, not just
+   a table, and ran follow-up queries to test a hypothesis whenever one came up.
 
 Revenue is calculated per order line as `UnitPrice * Quantity * (1 - Discount)`.
 

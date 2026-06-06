@@ -7,12 +7,15 @@ business recommendations.
 
 > **Tools:** SQLite · SQL · 830 orders, 77 products, 91 customers (2016–2018)
 
+📄 **Jump to:** [Results](#results) · [Full analysis](analysis.md) · [SQL queries](queries.sql)
+
 ---
 
 ## Executive Summary
 
-Northwind is a **profitable, fast-growing business** — monthly revenue grew roughly
-**5x** from 2016 to early 2018 — but it runs on **high concentration**: a small set
+Northwind is a **profitable, fast-growing business** — monthly revenue grew nearly
+**5x** (from ~$25K/month in mid-2016 to ~$124K in April 2018) — but it runs on
+**high concentration**: a small set
 of "star" products, "whale" customers, and top sales reps generate the majority of
 revenue. The same pattern appears in every angle analyzed.
 
@@ -96,7 +99,9 @@ Beyond writing queries, this project applies analytical judgment:
    (Ernst Handel, QUICK-Stop, Save-a-lot, Hungry Owl). Losing one impacts a whole
    category or country.
 2. **Diversify to reduce fragility.** Develop more mid-size customers in single-account
-   markets, and review the 53 below-average products to free capital and focus.
+   markets. On the product side, focus the review on the genuinely *low-volume, slow-moving*
+   tail — not simply the products "below average," since that average is inflated ~8.6x by a
+   single outlier (Côte de Blaye) and most products fall below it by definition.
 3. **Capitalize on 2018 growth & replicate the best.** Invest in inventory/suppliers
    while the trend is rising, and study the playbook of the most *efficient* reps
    (Anne Dodsworth, Andrew Fuller) to lift the team's average order value.
